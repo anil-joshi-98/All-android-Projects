@@ -3,49 +3,39 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/signupscreen"
+    android:backgroundTintMode="add"
     android:orientation="vertical"
     >
+
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="130dp"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
         android:orientation="vertical"
+        android:layout_marginTop="400dp"
+        android:gravity="center"
         android:layout_gravity="center"
-        android:padding="25dp"
         >
 
-        <ImageView
-            android:layout_width="400dp"
-            android:layout_height="120dp"
-            android:layout_gravity="center"
-            android:src="@drawable/opimg"
-            />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:orientation="vertical"
-        android:layout_margin="50dp"
-        android:padding="40dp"
-        android:paddingTop="40dp"
-        >
         <EditText
+            android:id="@+id/text1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_baseline_email_24"
-            android:drawableTint="@color/design_default_color_primary"
+            android:layout_height="50dp"
+            android:background="@drawable/round"
+            android:gravity="center"
             android:hint="Enter Email"
-            android:inputType="text"
-            />
+            android:inputType="text" />
+
         <EditText
-            android:paddingTop="30dp"
+            android:id="@+id/pswrd"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
-            android:drawableTint="@color/design_default_color_primary"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round"
+            android:gravity="center"
             android:hint="Enter Password"
-            android:inputType="textPassword"
-            />
+            android:inputType="textPassword" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -53,14 +43,14 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="vertical">
+
         <Button
+            android:id="@+id/loginBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/round"
             android:text="Login"
-            android:background="@color/teal_200"
-            android:textColor="@color/white"
-
-            />
+            android:textColor="@color/white" />
     </LinearLayout><LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -84,21 +74,24 @@
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
         >
+
         <ImageView
+            android:id="@+id/img1"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:src="@drawable/image"
-            />
+            android:src="@drawable/image" />
+
         <ImageView
+            android:id="@+id/img2"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:src="@drawable/fb"
-            />
+            android:src="@drawable/fb" />
+
         <ImageView
+            android:id="@+id/img3"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:src="@drawable/google"
-            />
+            android:src="@drawable/google" />
 
     </LinearLayout>
 
@@ -106,15 +99,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         android:layout_height="50dp">
-        <TextView
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:id="@+id/clickHere"
             android:gravity="center"
-            android:textSize="20dp"
-            android:text="New Member Register"
+            android:src="@drawable/ic_baseline_app_registration_24"
             android:textColor="#d1f542" />
     </LinearLayout>
 </LinearLayout>

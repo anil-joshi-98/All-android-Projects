@@ -56,7 +56,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public int deleteAll(){
         SQLiteDatabase db=this.getWritableDatabase();
-
         return db.delete(TABLE_NAME,null,null);
     }
     public Cursor showAll() {
